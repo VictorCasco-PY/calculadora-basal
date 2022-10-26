@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Calculadora de Hidratacion Basal</title>
+    <link rel="stylesheet" href="./style.css">
+    <script src="./script.js" defer></script>
+</head>
+
+<body>
+    <div id="contenedor">
+        <div id="calculadora">
+            <div class="contenido">
+                <h1>Hidratación Basal</h1>
+                <input class="item" type="number" id="peso" required placeholder="Ingrese el peso en kg." />
+                <p class="item" id="error">*Debe ingresar un valor válido!</p>
+                <button class="item" id="btnCalcular">Calcular</button>
+                <p class="resultado" id="vol"></p>
+                <p class="resultado" id="flujoMin"></p>
+                <p class="resultado" id="flujoMedio"></p>
+            </div>
+        </div>
+        <div id="detalle">
+            <div class="contenido">
+                <h1>¿Cómo se calcula?</h1>
+                <ul>
+                    <li>De 0kg a 10kg, se calcula 100cc por cada kilo.</li>
+                    <li>Se suman 50cc por cada kilo de peso por arriba de 10kg, hasta 20kg.</li>
+                    <li>De 20kg hasta 30kg, se suman 20cc por cada kilo adicional.</li>
+                    <li>De 31kg hacia arriba se calcula la Superficie Corporal del paciente, multiplicada por 1500.</li>
+                </ul>
+            </div>
+        </div>;
+    </div>
+</body>
+
+</html>
